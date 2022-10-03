@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { About } from "./components/About";
 import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
 import { blue, green } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -43,6 +44,7 @@ function App() {
         <Banner />
         <About />
         <Skills />
+        <Projects />
       </ThemeProvider>
     </StyledEngineProvider>
   );
