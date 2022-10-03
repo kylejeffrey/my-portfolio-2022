@@ -34,6 +34,8 @@ function App() {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+
+        <Navbar />
       </ThemeProvider>
     </StyledEngineProvider>
   );
