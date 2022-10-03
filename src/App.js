@@ -1,8 +1,9 @@
 import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { blue, green } from "@mui/material/colors";
+import { createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
-import { createTheme } from "@mui/system";
-import { blue, green } from "@mui/material/colors";
 
 const theme = createTheme({
   components: {
