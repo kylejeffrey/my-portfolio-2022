@@ -52,13 +52,14 @@ export const Navbar = () => {
                 // mr: "auto",
                 color: "white",
                 border: "2px solid rgb(200, 200, 200)",
+                ml: "8px",
               }}
             >
               KJ
             </Avatar>
           </Link>
         </Box>
-        <Hidden smDown>
+        <Hidden mdDown>
           <Box
             sx={{ display: "flex", flexGrow: 1, justifyContent: "flex-end" }}
           >
@@ -76,11 +77,11 @@ export const Navbar = () => {
             ))}
           </Box>
         </Hidden>
-        <Hidden smUp>
+        <Hidden mdUp>
           <IconButton>
             <MenuIcon
               fontSize="large"
-              sx={{ color: "white" }}
+              sx={{ color: "white", p: "0" }}
               onClick={() => setOpen(true)}
             />
           </IconButton>
