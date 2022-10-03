@@ -1,6 +1,7 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
+import { About } from "./components/About";
 import { blue, green } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -27,7 +28,7 @@ const theme = createTheme({
   palette: {
     primary: blue,
     secondary: green,
-    mode: "light",
+    mode: "dark",
   },
 });
 
@@ -39,6 +40,7 @@ function App() {
 
         <Navbar />
         <Banner />
+        <About />
       </ThemeProvider>
     </StyledEngineProvider>
   );
