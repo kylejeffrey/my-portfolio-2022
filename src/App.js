@@ -1,5 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
+import { Banner } from "./components/Banner";
 import { blue, green } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -37,6 +38,7 @@ function App() {
         <CssBaseline />
 
         <Navbar />
+        <Banner />
       </ThemeProvider>
     </StyledEngineProvider>
   );
