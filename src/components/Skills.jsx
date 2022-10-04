@@ -1,10 +1,10 @@
-import { Box, Typography, Container, Grid } from "@mui/material";
-import HTML from "../images/html-5.png";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import CSS from "../images/css-3.png";
+import HTML from "../images/html-5.png";
 import JavaScript from "../images/js.png";
+import Rails from "../images/rails.png";
 import React from "../images/react.png";
 import Ruby from "../images/ruby.png";
-import Rails from "../images/rails.png";
 
 export const Skills = () => {
   return (
