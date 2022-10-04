@@ -1,19 +1,19 @@
-import { useState } from "react";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
-  Toolbar,
-  Box,
-  Link,
   Avatar,
+  Box,
+  Divider,
   Hidden,
   IconButton,
-  SwipeableDrawer,
-  Divider,
+  Link,
   List,
   ListItem,
+  SwipeableDrawer,
+  Toolbar,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { useState } from "react";
 
 const navigationLinks = [
   { name: "About", href: "#" },
