@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Grid,
   IconButton,
@@ -46,13 +47,18 @@ export const Projects = () => {
                 </Link>
               </Grid>
               <Grid item xs={12} md={5.5}>
-                <div>
-                  <Typography variant="h3">ii-vent</Typography>
-                  <Typography variant="body1">
+                <Box>
+                  <Typography variant="h3" sx={{ fontFamily: "Montserrat" }}>
+                    ii-vent
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{ color: "rgb(150, 150, 150)" }}
+                  >
                     A desktop web-application that streamlines the management of
                     music events.
                   </Typography>
-                  <div>
+                  <Box>
                     <IconButton>
                       <Box
                         component="img"
@@ -74,8 +80,20 @@ export const Projects = () => {
                         sx={{ height: "30px" }}
                       ></Box>
                     </IconButton>
-                  </div>
-                </div>
+                  </Box>
+                  <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      sx={{
+                        p: "8px 32px",
+                        m: "0 auto",
+                      }}
+                    >
+                      View Project
+                    </Button>
+                  </Box>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
