@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import PropTypes, { string } from "prop-types";
+import PropTypes from "prop-types";
 import Bootstrap from "../../images/bootstrap.png";
 import CSS from "../../images/css-3.png";
 import HTML from "../../images/html-5.png";
