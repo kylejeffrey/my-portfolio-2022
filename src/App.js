@@ -13,28 +13,20 @@ import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
 
 const theme = createTheme({
-  components: {
-    MuiLink: {
-      defaultProps: {
-        underline: "hover",
-      },
-    },
-    MuiCard: {
-      variants: [
-        {
-          props: { variant: "outlined" },
-          style: {
-            borderColor: "#e7ebf0",
-          },
-        },
-      ],
-    },
-  },
   palette: {
-    primary: blue,
-    secondary: green,
     mode: "dark",
+    //   primary: {
+    //     main: blue,
+    //   },
+    //   secondary: green,
+    //   kylesColors: {
+    //     red: "#ff0",
+    //   },
   },
+  // projectLanguage: {
+  //   padding: "8px",
+  //   margin: "24px",
+  // },
 });
 
 function App() {
