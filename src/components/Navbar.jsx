@@ -78,12 +78,8 @@ export const Navbar = () => {
           </Box>
         </Hidden>
         <Hidden mdUp>
-          <IconButton>
-            <MenuIcon
-              fontSize="large"
-              sx={{ color: "white", p: "0" }}
-              onClick={() => setOpen(true)}
-            />
+          <IconButton onClick={() => setOpen(true)}>
+            <MenuIcon fontSize="large" sx={{ color: "white", p: "0" }} />
           </IconButton>
         </Hidden>
       </Toolbar>
@@ -100,11 +96,8 @@ export const Navbar = () => {
         }}
       >
         <div>
-          <IconButton>
-            <ChevronRightIcon
-              onClick={() => setOpen(false)}
-              sx={{ color: "white" }}
-            />
+          <IconButton onClick={() => setOpen(false)}>
+            <ChevronRightIcon sx={{ color: "white" }} />
           </IconButton>
         </div>
         <Divider />
