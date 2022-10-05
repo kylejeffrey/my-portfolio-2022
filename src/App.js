@@ -14,15 +14,19 @@ import { Skills } from "./components/Skills";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#0d47a1",
-    },
-    secondary: green,
     mode: "dark",
+    //   primary: {
+    //     main: blue,
+    //   },
+    //   secondary: green,
+    //   kylesColors: {
+    //     red: "#ff0",
+    //   },
   },
-  projectLanguage: {
-    padding: "8px",
-  },
+  // projectLanguage: {
+  //   padding: "8px",
+  //   margin: "24px",
+  // },
 });
 
 function App() {
