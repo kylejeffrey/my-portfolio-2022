@@ -8,6 +8,7 @@ import MUI from "../../images/mui.svg";
 import Rails from "../../images/rails.png";
 import React from "../../images/react.png";
 import Ruby from "../../images/ruby.png";
+import Stimulus from "../../images/stimulus.svg";
 
 const images = {
   bootstrap: Bootstrap,
@@ -18,6 +19,7 @@ const images = {
   react: React,
   ruby: Ruby,
   mui: MUI,
+  stimulus: Stimulus,
 };
 
 export function LangAvatar({ sx, imageKey, ...props }) {
@@ -27,8 +29,8 @@ export function LangAvatar({ sx, imageKey, ...props }) {
       sx={{
         m: 2,
         p: 1,
-        height: { xs: "40px", md: "56px" },
-        width: { xs: "40px", md: "56px" },
+        height: { xs: "32px", md: "56px" },
+        width: { xs: "32px", md: "56px" },
         ...sx,
       }}
       src={images[imageKey]}
