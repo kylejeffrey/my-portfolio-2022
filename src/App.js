@@ -8,9 +8,11 @@ import {
 import "./App.css";
 import { About } from "./components/About";
 import { Banner } from "./components/Banner";
+import { Contact } from "./components/contact/contact";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
+// require("dotenv").config();
 
 const theme = createTheme({
   palette: {
@@ -40,6 +42,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </ThemeProvider>
     </StyledEngineProvider>
   );

@@ -1,10 +1,8 @@
 import {
-  Avatar,
   Box,
   Button,
   Container,
   Grid,
-  IconButton,
   Link,
   Paper,
   Typography,
