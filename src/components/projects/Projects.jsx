@@ -14,7 +14,7 @@ import { LangAvatar } from "./lang_avatar";
 
 export const Projects = () => {
   return (
-    <Container sx={{ mb: "240px" }}>
+    <Container id="projects" sx={{ mb: "240px" }}>
       <Typography
         variant="h4"
         sx={{ textAlign: "center", fontFamily: "Montserrat", mb: 5 }}

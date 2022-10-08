@@ -5,6 +5,8 @@ import {
   StyledEngineProvider,
   ThemeProvider,
 } from "@mui/material/styles";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { About } from "./components/About";
 import { Banner } from "./components/Banner";
@@ -12,7 +14,6 @@ import { Contact } from "./components/contact/contact";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
-// require("dotenv").config();
 
 const theme = createTheme({
   palette: {
@@ -31,21 +32,21 @@ const theme = createTheme({
   // },
 });
 
-function App() {
+export default function App() {
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+    <BrowserRouter>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
 
-        <Navbar />
-        <Banner />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </ThemeProvider>
-    </StyledEngineProvider>
+          <Navbar />
+          <Banner />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </ThemeProvider>
+      </StyledEngineProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;

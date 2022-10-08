@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 export const About = () => {
   return (
     <Box
+      id="about"
       sx={{
         m: { xs: "0 auto 160px" },
         maxWidth: { xs: "640px", md: "800px" },

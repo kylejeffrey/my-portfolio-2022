@@ -51,7 +51,7 @@ export const Contact = () => {
   // }
 
   return (
-    <Container sx={{ mb: 5 }}>
+    <Container id="contact" sx={{ mb: 5 }}>
       {/* <form>
         <input
           value={contact.name}

@@ -4,6 +4,7 @@ import avatar from "../images/my-photo-cropped-01.png";
 export const Banner = () => {
   return (
     <Box
+      id="banner"
       sx={{
         alignItems: "center",
         display: "flex",
