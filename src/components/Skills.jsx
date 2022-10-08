@@ -8,7 +8,7 @@ import Ruby from "../images/ruby.png";
 
 export const Skills = () => {
   return (
-    <Box sx={{ mb: "240px" }}>
+    <Box id="skills" sx={{ mb: "240px" }}>
       <Typography
         variant="h4"
         sx={{ textAlign: "center", fontFamily: "Montserrat" }}

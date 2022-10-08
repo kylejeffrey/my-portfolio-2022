@@ -7,19 +7,27 @@ import {
   Divider,
   Hidden,
   IconButton,
-  Link,
+  // Link,
   List,
   ListItem,
   SwipeableDrawer,
   Toolbar,
 } from "@mui/material";
 import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const navigationLinks = [
-  { name: "About", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -34,12 +42,15 @@ export const Navbar = () => {
       >
         <Box>
           <Link
-            variant="button"
-            href={"#"}
-            underline="none"
-            sx={{
-              color: "white",
-            }}
+            to="#banner"
+            scroll={(el) => scrollWithOffset(el)}
+            style={{ textDecoration: "none" }}
+            // variant="button"
+            // href={"#"}
+            // underline="none"
+            // sx={{
+            //   color: "white",
+            // }}
           >
             <Avatar
               sizes="sm"
@@ -66,10 +77,14 @@ export const Navbar = () => {
             {navigationLinks.map((item) => (
               <Box key={item.href} sx={{ px: 2 }}>
                 <Link
-                  variant="button"
-                  href={item.href}
-                  underline="none"
-                  sx={{ color: "white" }}
+                  to={item.href}
+                  scroll={(el) => scrollWithOffset(el)}
+                  // smooth
+                  style={{ textDecoration: "none", color: "white" }}
+                  // variant="button"
+                  // href={item.href}
+                  // underline="none"
+                  // sx={{ color: "white" }}
                 >
                   {item.name}
                 </Link>
@@ -105,10 +120,14 @@ export const Navbar = () => {
           {navigationLinks.map((item) => (
             <ListItem key={item.href}>
               <Link
-                variant="button"
-                href={item.href}
-                underline="none"
-                sx={{ color: "white" }}
+                to={item.href}
+                scroll={(el) => scrollWithOffset(el)}
+                style={{ textDecoration: "none", color: "white" }}
+                onClick={() => setOpen(false)}
+                // variant="button"
+                // href={item.href}
+                // underline="none"
+                // sx={{ color: "white" }}
               >
                 {item.name}
               </Link>
