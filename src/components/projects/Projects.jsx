@@ -27,7 +27,11 @@ export const Projects = () => {
             <Paper sx={{ p: 3 }}>
               <Grid container sx={{ justifyContent: "space-between" }}>
                 <Grid item xs={12} md={5.5}>
-                  <Link href="#">
+                  <Link
+                    href="https://www.ii-vent.live/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div>
                       <span>
                         <img
@@ -71,16 +75,23 @@ export const Projects = () => {
                       <LangAvatar imageKey="bootstrap" sx={{ mr: 0 }} />
                     </Box>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        sx={{
-                          py: 1,
-                          px: 6,
-                        }}
+                      <Link
+                        href="https://www.ii-vent.live/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ textDecoration: "none" }}
                       >
-                        View Project
-                      </Button>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          sx={{
+                            py: 1,
+                            px: 6,
+                          }}
+                        >
+                          View Project
+                        </Button>
+                      </Link>
                     </Box>
                   </Box>
                 </Grid>
@@ -91,7 +102,11 @@ export const Projects = () => {
             <Paper sx={{ p: 3 }}>
               <Grid container sx={{ justifyContent: "space-between" }}>
                 <Grid item xs={12} md={5.5}>
-                  <Link href="#">
+                  <Link
+                    href="https://books-bnb-project.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div>
                       <span>
                         <img
@@ -134,16 +149,23 @@ export const Projects = () => {
                       <LangAvatar imageKey="bootstrap" sx={{ mr: 0 }} />
                     </Box>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        sx={{
-                          py: 1,
-                          px: 6,
-                        }}
+                      <Link
+                        href="https://books-bnb-project.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ textDecoration: "none" }}
                       >
-                        View Project
-                      </Button>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          sx={{
+                            py: 1,
+                            px: 6,
+                          }}
+                        >
+                          View Project
+                        </Button>
+                      </Link>
                     </Box>
                   </Box>
                 </Grid>
@@ -154,7 +176,11 @@ export const Projects = () => {
             <Paper sx={{ p: 3 }}>
               <Grid container sx={{ justifyContent: "space-between" }}>
                 <Grid item xs={12} md={5.5}>
-                  <Link href="#">
+                  <Link
+                    href="https://watch-list-kmj.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div>
                       <span>
                         <img
@@ -196,16 +222,23 @@ export const Projects = () => {
                       <LangAvatar imageKey="bootstrap" sx={{ mr: 0 }} />
                     </Box>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        sx={{
-                          py: 1,
-                          px: 6,
-                        }}
+                      <Link
+                        href="https://watch-list-kmj.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ textDecoration: "none" }}
                       >
-                        View Project
-                      </Button>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          sx={{
+                            py: 1,
+                            px: 6,
+                          }}
+                        >
+                          View Project
+                        </Button>
+                      </Link>
                     </Box>
                   </Box>
                 </Grid>

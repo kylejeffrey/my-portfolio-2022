@@ -11,6 +11,7 @@ import "./App.css";
 import { About } from "./components/About";
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/contact/contact";
+import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
@@ -45,6 +46,7 @@ export default function App() {
           <Skills />
           <Projects />
           <Contact />
+          <Footer />
         </ThemeProvider>
       </StyledEngineProvider>
     </BrowserRouter>
