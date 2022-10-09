@@ -16,7 +16,7 @@ export const Banner = () => {
         alignItems: "center",
         display: "flex",
         flexDirection: { xs: "column-reverse", md: "row" },
-        height: "720px",
+        height: "800px",
         justifyContent: "center",
         pb: "160px",
         textAlign: { xs: "center", md: "left" },
@@ -66,7 +66,7 @@ export const Banner = () => {
             width: "400px",
             display: "flex",
             justifyContent: { xs: "center", md: "space-between" },
-            m: { xs: "0 auto", md: "16px 0" },
+            m: { xs: "24px auto", md: "24px 0" },
           }}
         >
           <HashLink
