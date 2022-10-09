@@ -63,7 +63,7 @@ export const Navbar = () => {
                 // mr: "auto",
                 color: "white",
                 border: "2px solid rgb(200, 200, 200)",
-                ml: "8px",
+                ml: 1,
               }}
             >
               KJ

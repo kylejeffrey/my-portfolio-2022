@@ -1,5 +1,12 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 import avatar from "../images/my-photo-cropped-01.png";
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
 
 export const Banner = () => {
   return (
@@ -23,7 +30,9 @@ export const Banner = () => {
       >
         <Box
           sx={{
-            mb: "24px",
+            m: { xs: "0 auto", md: 0 },
+            mb: 3,
+            width: { xs: "320px", md: "480px" },
           }}
         >
           <Typography variant="h5" sx={{ mb: "8px" }}>
@@ -54,18 +63,41 @@ export const Banner = () => {
         </Box>
         <Box
           sx={{
-            width: "300px",
+            width: "400px",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: { xs: "center", md: "space-between" },
             m: { xs: "0 auto", md: "16px 0" },
           }}
         >
-          <Button variant="contained" size="large">
-            Contact Me
-          </Button>
-          <Button variant="outlined" size="large" sx={{ padding: "0 2.5em" }}>
-            GitHub
-          </Button>
+          <HashLink
+            to="#contact"
+            scroll={(el) => scrollWithOffset(el)}
+            style={{ textDecoration: "none" }}
+          >
+            <Button variant="contained" size="large">
+              Contact Me
+            </Button>
+          </HashLink>
+          {/* <Link
+            href="https://github.com/kylejeffrey"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Button variant="outlined" size="large" sx={{ py: 1, px: 4.5 }}>
+              GitHub
+            </Button>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/kyle-jeffrey/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Button variant="outlined" size="large" sx={{ py: 1, px: 3 }}>
+              LinkedIn
+            </Button>
+          </Link> */}
         </Box>
       </Box>
       <Box
