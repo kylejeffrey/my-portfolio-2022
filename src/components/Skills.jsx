@@ -24,7 +24,7 @@ export const Skills = () => {
                 component="img"
                 src={HTML}
                 alt="HTML"
-                sx={{ height: "50px", width: "50px" }}
+                sx={{ height: "40px", width: "40px" }}
               ></Box>
             </Box>
           </Grid>
@@ -35,7 +35,7 @@ export const Skills = () => {
                 component="img"
                 src={CSS}
                 alt="CSS"
-                sx={{ height: "50px", width: "50px" }}
+                sx={{ height: "40px", width: "40px" }}
               ></Box>
             </Box>
           </Grid>
@@ -46,7 +46,7 @@ export const Skills = () => {
                 component="img"
                 src={JavaScript}
                 alt="JavaScript"
-                sx={{ height: "50px", width: "50px" }}
+                sx={{ height: "40px", width: "40px" }}
               ></Box>
             </Box>
           </Grid>
@@ -57,7 +57,7 @@ export const Skills = () => {
                 component="img"
                 src={React}
                 alt="React"
-                sx={{ height: "50px", width: "50px" }}
+                sx={{ height: "40px", width: "40px" }}
               ></Box>
             </Box>
           </Grid>
@@ -68,7 +68,7 @@ export const Skills = () => {
                 component="img"
                 src={Ruby}
                 alt="Ruby"
-                sx={{ height: "50px", width: "50px" }}
+                sx={{ height: "40px", width: "40px" }}
               ></Box>
             </Box>
           </Grid>
@@ -80,8 +80,8 @@ export const Skills = () => {
                 src={Rails}
                 alt="Rails"
                 sx={{
-                  height: "50px",
-                  width: "50px",
+                  height: "40px",
+                  width: "40px",
                 }}
               ></Box>
             </Box>

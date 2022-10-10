@@ -24,22 +24,20 @@ export const About = () => {
         }}
       >
         <Typography variant="body1" sx={{ m: "16px 32px" }}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-          quisquam magni culpa doloribus minus enim illo minima quo veritatis
-          delectus. Quas molestias libero nostrum, et distinctio tempora dolor
-          cumque expedita.
+          My name is Kyle Jeffrey. I was born and raised in Phoenix, Arizona and
+          have lived in Osaka, Japan since 2013.
         </Typography>
         <Typography variant="body1" sx={{ m: "16px 32px" }}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-          quisquam magni culpa doloribus minus enim illo minima quo veritatis
-          delectus. Quas molestias libero nostrum, et distinctio tempora dolor
-          cumque expedita.
+          As a full-stack web developer, I have a deep interest in taking
+          innovative ideas and making them a reality through code. Since
+          becoming a developer, I've built side projects to help me learn new
+          technologies and explore creative ideas.
         </Typography>
         <Typography variant="body1" sx={{ m: "16px 32px" }}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-          quisquam magni culpa doloribus minus enim illo minima quo veritatis
-          delectus. Quas molestias libero nostrum, et distinctio tempora dolor
-          cumque expedita.
+          In my spare time, I like to work on music production, making sci-fi
+          inspired drum and bass. Some of my inspiration stems from movies such
+          as Blade Runner, District 9, and Ex Machina. I'm also influenced by
+          artists and musicians such as Noisia, Billain, and Spor.
         </Typography>
       </Box>
     </Box>
