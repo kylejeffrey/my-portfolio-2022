@@ -35,7 +35,10 @@ export const Banner = () => {
             width: { xs: "320px", md: "480px" },
           }}
         >
-          <Typography variant="h5" sx={{ mb: "8px" }}>
+          <Typography
+            variant="h5"
+            sx={{ mb: "8px", color: "rgb(150, 150, 150)" }}
+          >
             Hi, I'm
           </Typography>
           <Typography
@@ -45,6 +48,7 @@ export const Banner = () => {
               color: "white",
               fontFamily: "Montserrat",
               mb: "16px",
+              fontWeight: "400",
             }}
           >
             Kyle Jeffrey,
@@ -113,7 +117,7 @@ export const Banner = () => {
             height: { xs: "240px", md: "320px" },
             width: { xs: "240px", md: "320px" },
             objectFit: "cover",
-            border: "4px solid white",
+            border: "4px solid rgb(150, 150, 150)",
             borderRadius: "50%",
           }}
         ></Box>
