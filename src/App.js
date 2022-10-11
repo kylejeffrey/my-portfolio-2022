@@ -13,7 +13,7 @@ import { Banner } from "./components/Banner";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/projects/Projects";
+import { Projects } from "./components/projects/projects";
 import { Skills } from "./components/Skills";
 
 const theme = createTheme({
@@ -22,15 +22,11 @@ const theme = createTheme({
     //   primary: {
     //     main: blue,
     //   },
-    //   secondary: green,
+    secondary: green,
     //   kylesColors: {
     //     red: "#ff0",
     //   },
   },
-  // projectLanguage: {
-  //   padding: "8px",
-  //   margin: "24px",
-  // },
 });
 
 export default function App() {

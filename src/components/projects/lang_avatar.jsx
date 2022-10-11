@@ -29,8 +29,8 @@ export function LangAvatar({ sx, imageKey, ...props }) {
       sx={{
         m: 2,
         p: 1,
-        height: { xs: "32px", md: "56px" },
-        width: { xs: "32px", md: "56px" },
+        height: { xs: "32px", md: "40px" },
+        width: { xs: "32px", md: "40px" },
         ...sx,
       }}
       src={images[imageKey]}
