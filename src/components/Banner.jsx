@@ -1,4 +1,4 @@
-import { Box, Button, Link, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 import avatar from "../images/my-photo-cropped-01.png";
 

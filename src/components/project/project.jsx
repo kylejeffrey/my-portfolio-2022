@@ -5,26 +5,30 @@ import { LangAvatar } from "../projects/lang_avatar";
 
 export function Project({ name, image, link, description, languages }) {
   return (
-    <Grid item xs={12} sx={{ p: 0 }}>
+    <Grid item xs={12} sx={{ p: 0, maxWidth: { xs: "640px", lg: "100%" } }}>
       <Paper sx={{ p: 3, mb: 5 }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
           {/* <LeftImageBlock name={name} image={image} /> */}
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} lg={5.5} sx={{ pb: 3 }}>
             <Link href={link} target="_blank" rel="noopener noreferrer">
               <div>
-                <span>
-                  <img
-                    src={image}
-                    alt={name}
-                    style={{
-                      maxWidth: "100%",
-                    }}
-                  />
-                </span>
+                {/* <span> */}
+                <img
+                  src={image}
+                  alt={name}
+                  style={{
+                    // maxWidth: "100%",
+                    // maxHeight: { xs: "400px" },
+                    objectFit: "cover",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                />
+                {/* </span> */}
               </div>
             </Link>
           </Grid>
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} lg={5.5}>
             <Paper
               variant="outlined"
               sx={{

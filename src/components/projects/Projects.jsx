@@ -21,7 +21,7 @@ export function Projects() {
         Projects
       </Typography>
       <Box>
-        <Grid container>
+        <Grid container justifyContent={"center"}>
           {projects.map((project) => (
             <Project key={project.name} {...project} />
           ))}
