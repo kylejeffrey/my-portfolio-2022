@@ -16,7 +16,12 @@ export function Projects() {
     <Container id="projects" sx={{ mb: "240px" }}>
       <Typography
         variant="h4"
-        sx={{ textAlign: "center", fontFamily: "Montserrat", mb: 5 }}
+        sx={{
+          textAlign: "center",
+          fontFamily: "Betatron",
+          mb: 5,
+          fontSize: "80px",
+        }}
       >
         Projects
       </Typography>

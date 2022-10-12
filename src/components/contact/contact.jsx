@@ -63,15 +63,24 @@ export const Contact = () => {
       <Box>
         <Typography
           variant="h4"
-          sx={{ textAlign: "center", fontFamily: "Montserrat", mb: 5 }}
+          sx={{
+            textAlign: "center",
+            fontFamily: "Betatron",
+            mb: 5,
+            fontSize: "80px",
+          }}
         >
           Contact Me
         </Typography>
       </Box>
       <Box>
-        <Typography sx={{ mb: 5 }} align="center" variant="body1">
-          I'm open to freelance opportunities! Do you have a request, question
-          or suggestion? Feel free to contact me!
+        <Typography
+          sx={{ mb: 5, fontFamily: "NeueHaasDisplayThin" }}
+          align="center"
+          variant="body1"
+        >
+          I'm open to freelance opportunities. Do you have a request, question
+          or suggestion? Feel free to contact me.
         </Typography>
       </Box>
       <Container>

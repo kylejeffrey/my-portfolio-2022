@@ -1,5 +1,6 @@
 import { Avatar } from "@mui/material";
 import PropTypes from "prop-types";
+import { RubyPlainIcon } from "react-devicons";
 import Bootstrap from "../../images/bootstrap.png";
 import CSS from "../../images/css-3.png";
 import HTML from "../../images/html-5.png";
@@ -22,6 +23,10 @@ const images = {
   stimulus: Stimulus,
 };
 
+const IconName = {
+  ruby: "RubyPlainIcon",
+};
+
 export function LangAvatar({ sx, imageKey, ...props }) {
   console.log(props);
   return (
@@ -36,12 +41,14 @@ export function LangAvatar({ sx, imageKey, ...props }) {
       src={images[imageKey]}
       {...props}
     />
+
+    // <{IconName[imageKey]} color="white" size="40px" />
   );
 }
 
 // Experimenting with PropTypes
 
-LangAvatar.propTypes = {
-  sx: PropTypes.object,
-  imageKey: PropTypes.oneOf(Object.keys(images)),
-};
+// LangAvatar.propTypes = {
+//   sx: PropTypes.object,
+//   imageKey: PropTypes.oneOf(Object.keys(images)),
+// };

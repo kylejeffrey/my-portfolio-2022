@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./fonts/Betatron-Regular.otf";
+import "./fonts/NeueHaasDisplayBlack.ttf";
+import "./fonts/NeueHaasDisplayThin.ttf";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+
 console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
 window.__CONFIG__ = {
   REACT_APP_EMAILJS_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,

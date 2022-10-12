@@ -17,10 +17,10 @@ import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const navigationLinks = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "ABOUT", href: "#about" },
+  { name: "SKILLS", href: "#skills" },
+  { name: "PROJECTS", href: "#projects" },
+  { name: "CONTACT", href: "#contact" },
 ];
 
 const scrollWithOffset = (el) => {
@@ -37,7 +37,7 @@ export const Navbar = () => {
         sx={{
           p: 0,
           justifyContent: "space-between",
-          backgroundColor: "#282c34",
+          backgroundColor: "black",
         }}
       >
         <Box>
@@ -80,7 +80,11 @@ export const Navbar = () => {
                   to={item.href}
                   scroll={(el) => scrollWithOffset(el)}
                   // smooth
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    fontFamily: "NeueHaasDisplayThin",
+                  }}
                   // variant="button"
                   // href={item.href}
                   // underline="none"
@@ -105,7 +109,7 @@ export const Navbar = () => {
         onClose={() => setOpen(false)}
         PaperProps={{
           sx: {
-            backgroundColor: "#282c34",
+            backgroundColor: "black",
             boxShadow: 10,
           },
         }}
@@ -122,7 +126,11 @@ export const Navbar = () => {
               <Link
                 to={item.href}
                 scroll={(el) => scrollWithOffset(el)}
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontFamily: "NeueHaasDisplayThin",
+                }}
                 onClick={() => setOpen(false)}
                 // variant="button"
                 // href={item.href}

@@ -19,16 +19,24 @@ import { Skills } from "./components/Skills";
 const theme = createTheme({
   palette: {
     background: {
-      default: "#070b0d",
+      default: "black",
     },
     mode: "dark",
-    //   primary: {
-    //     main: blue,
-    //   },
+    primary: {
+      main: "#CBF83E",
+    },
     // secondary: green,
     //   kylesColors: {
     //     red: "#ff0",
     //   },
+  },
+  overrides: {
+    MuiPaper: {
+      root: {
+        // backgroundColor: "#121212",
+        backgroundColor: "black",
+      },
+    },
   },
 });
 

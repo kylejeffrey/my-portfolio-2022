@@ -29,18 +29,22 @@ export function Project({ name, image, link, description, languages }) {
             </Link>
           </Grid>
           <Grid item xs={12} lg={5.5}>
-            <Paper
-              variant="outlined"
+            <Box
+              // variant="outlined"
               sx={{
                 height: "100%",
                 px: { xs: 2, md: 5 },
                 pt: 2,
                 pb: { xs: 2, md: 2 },
+                // backgroundColor: "#121212",
               }}
             >
               <Typography
                 variant="h4"
-                sx={{ fontFamily: "Montserrat", mb: { xs: 1, md: 3 } }}
+                sx={{
+                  fontFamily: "NeueHaasDisplayThin",
+                  mb: { xs: 1, md: 3 },
+                }}
               >
                 {name}
               </Typography>
@@ -49,6 +53,7 @@ export function Project({ name, image, link, description, languages }) {
                 sx={{
                   color: "rgb(150, 150, 150)",
                   mb: { xs: 0, md: 2 },
+                  fontFamily: "NeueHaasDisplayThin",
                 }}
               >
                 {description}
@@ -73,7 +78,7 @@ export function Project({ name, image, link, description, languages }) {
                 >
                   <Button
                     variant="contained"
-                    color="secondary"
+                    color="primary"
                     sx={{
                       py: 1,
                       px: 6,
@@ -83,7 +88,7 @@ export function Project({ name, image, link, description, languages }) {
                   </Button>
                 </Link>
               </Box>
-            </Paper>
+            </Box>
           </Grid>
         </Grid>
       </Paper>

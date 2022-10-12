@@ -34,7 +34,7 @@ export const Footer = () => {
               sizes="sm"
               sx={{
                 boxShadow: "0 0 10px black",
-                fontFamily: "Montserrat",
+                fontFamily: "NeueHaasDisplayThin",
                 background: "black",
                 borderRadius: "5px",
                 // width: "32px",
