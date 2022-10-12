@@ -1,5 +1,5 @@
 import { CssBaseline } from "@mui/material";
-import { blue, green } from "@mui/material/colors";
+import { green } from "@mui/material/colors";
 import {
   createTheme,
   StyledEngineProvider,
@@ -13,7 +13,7 @@ import { Banner } from "./components/Banner";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/projects/projects";
+import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
 
 const theme = createTheme({
