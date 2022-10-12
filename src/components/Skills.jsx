@@ -13,9 +13,9 @@ export const Skills = () => {
     <Box id="skills" sx={{ mb: "240px" }}>
       <Typography
         variant="h4"
-        sx={{ textAlign: "center", fontFamily: "Montserrat" }}
+        sx={{ textAlign: "center", fontFamily: "Betatron", fontSize: "80px" }}
       >
-        My Skills
+        MY SKILLS
       </Typography>
       <Container maxWidth="sm" className="skills-body-wrapper">
         <Grid container my={4} rowSpacing={2} columnSpacing={12}>
