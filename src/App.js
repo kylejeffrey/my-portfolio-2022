@@ -18,11 +18,14 @@ import { Skills } from "./components/Skills";
 
 const theme = createTheme({
   palette: {
+    background: {
+      default: "#070b0d",
+    },
     mode: "dark",
     //   primary: {
     //     main: blue,
     //   },
-    secondary: green,
+    // secondary: green,
     //   kylesColors: {
     //     red: "#ff0",
     //   },

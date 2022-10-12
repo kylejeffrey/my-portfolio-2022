@@ -1,5 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
+import GitHub from "../images/github-icon.png";
+import LinkedIn from "../images/linkedin-icon.png";
 import avatar from "../images/my-photo-cropped-01.png";
 
 const scrollWithOffset = (el) => {
@@ -66,11 +68,45 @@ export const Banner = () => {
           </Typography>
         </Box>
         <Box
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={{ xs: "center", md: "start" }}
+        >
+          <Link
+            href="https://www.linkedin.com/in/kyle-jeffrey/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={LinkedIn}
+              style={{
+                height: "56px",
+                objectFit: "cover",
+                filter: "brightness(0) invert(0.8)",
+              }}
+            />
+          </Link>
+          <Link
+            href="https://github.com/kylejeffrey"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={GitHub}
+              style={{
+                height: "72px",
+                objectFit: "cover",
+                filter: "brightness(0) invert(0.8)",
+              }}
+            />
+          </Link>
+        </Box>
+        <Box
           sx={{
             width: "400px",
             display: "flex",
             justifyContent: { xs: "center", md: "space-between" },
-            m: { xs: "24px auto", md: "24px 0" },
+            m: { xs: "24px auto", md: "0" },
           }}
         >
           <HashLink
@@ -82,26 +118,6 @@ export const Banner = () => {
               Contact Me
             </Button>
           </HashLink>
-          {/* <Link
-            href="https://github.com/kylejeffrey"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-          >
-            <Button variant="outlined" size="large" sx={{ py: 1, px: 4.5 }}>
-              GitHub
-            </Button>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/kyle-jeffrey/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-          >
-            <Button variant="outlined" size="large" sx={{ py: 1, px: 3 }}>
-              LinkedIn
-            </Button>
-          </Link> */}
         </Box>
       </Box>
       <Box
