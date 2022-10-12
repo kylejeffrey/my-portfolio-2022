@@ -9,7 +9,7 @@ export function Project({ name, image, link, description, languages }) {
       <Paper sx={{ p: 3, mb: 5 }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
           {/* <LeftImageBlock name={name} image={image} /> */}
-          <Grid item xs={12} lg={5.5} sx={{ pb: 3 }}>
+          <Grid item xs={12} lg={5.5} sx={{ pb: { xs: 3, lg: 0 } }}>
             <Link href={link} target="_blank" rel="noopener noreferrer">
               <div>
                 {/* <span> */}
@@ -17,11 +17,11 @@ export function Project({ name, image, link, description, languages }) {
                   src={image}
                   alt={name}
                   style={{
-                    // maxWidth: "100%",
-                    // maxHeight: { xs: "400px" },
+                    maxWidth: "100%",
+                    maxHeight: { xs: "400px" },
                     objectFit: "cover",
-                    height: "100%",
-                    width: "100%",
+                    // height: "100%",
+                    // width: "100%",
                   }}
                 />
                 {/* </span> */}
