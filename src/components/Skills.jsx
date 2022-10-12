@@ -1,10 +1,12 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import CSS from "../images/css-3.png";
-import HTML from "../images/html-5.png";
-import JavaScript from "../images/js.png";
-import Rails from "../images/rails.png";
-import React from "../images/react.png";
-import Ruby from "../images/ruby.png";
+import {
+  Css3PlainIcon,
+  Html5PlainIcon,
+  JavascriptPlainIcon,
+  RailsPlainIcon,
+  ReactOriginalIcon,
+  RubyPlainIcon,
+} from "react-devicons";
 
 export const Skills = () => {
   return (
@@ -19,71 +21,32 @@ export const Skills = () => {
         <Grid container my={4} rowSpacing={2} columnSpacing={12}>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>HTML</p>
-              <Box
-                component="img"
-                src={HTML}
-                alt="HTML"
-                sx={{ height: "40px", width: "40px" }}
-              ></Box>
+              <Html5PlainIcon color="white" size="40px" />
             </Box>
           </Grid>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>CSS</p>
-              <Box
-                component="img"
-                src={CSS}
-                alt="CSS"
-                sx={{ height: "40px", width: "40px" }}
-              ></Box>
+              <Css3PlainIcon color="white" size="40px" />
             </Box>
           </Grid>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>JavaScript</p>
-              <Box
-                component="img"
-                src={JavaScript}
-                alt="JavaScript"
-                sx={{ height: "40px", width: "40px" }}
-              ></Box>
+              <JavascriptPlainIcon color="white" size="40px" />
             </Box>
           </Grid>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>React</p>
-              <Box
-                component="img"
-                src={React}
-                alt="React"
-                sx={{ height: "40px", width: "40px" }}
-              ></Box>
+              <ReactOriginalIcon color="white" size="40px" />
             </Box>
           </Grid>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>Ruby</p>
-              <Box
-                component="img"
-                src={Ruby}
-                alt="Ruby"
-                sx={{ height: "40px", width: "40px" }}
-              ></Box>
+              <RubyPlainIcon color="white" size="40px" />
             </Box>
           </Grid>
           <Grid item xs={6} md={4}>
             <Box p={2} textAlign="center">
-              <p>Rails</p>
-              <Box
-                component="img"
-                src={Rails}
-                alt="Rails"
-                sx={{
-                  height: "40px",
-                  width: "40px",
-                }}
-              ></Box>
+              <RailsPlainIcon color="white" size="40px" />
             </Box>
           </Grid>
         </Grid>
