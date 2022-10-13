@@ -6,7 +6,7 @@ import { LangAvatar } from "../projects/lang_avatar";
 export function Project({ name, image, link, description, languages }) {
   return (
     <Grid item xs={12} sx={{ p: 0, maxWidth: { xs: "640px", lg: "100%" } }}>
-      <Paper sx={{ p: 3, mb: 5 }}>
+      <Paper sx={{ p: 3, mb: 5, borderRadius: "15px" }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
           {/* <LeftImageBlock name={name} image={image} /> */}
           <Grid item xs={12} lg={5.5} sx={{ pb: { xs: 3, lg: 0 } }}>
@@ -30,13 +30,11 @@ export function Project({ name, image, link, description, languages }) {
           </Grid>
           <Grid item xs={12} lg={5.5}>
             <Box
-              // variant="outlined"
               sx={{
                 height: "100%",
                 px: { xs: 2, md: 5 },
                 pt: 2,
                 pb: { xs: 2, md: 2 },
-                // backgroundColor: "#121212",
               }}
             >
               <Typography
@@ -61,8 +59,9 @@ export function Project({ name, image, link, description, languages }) {
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
-                  mb: { xs: 0, md: 2 },
+                  justifyContent: "start",
+                  mt: 5,
+                  mb: 5,
                 }}
               >
                 {languages.map((language) => (

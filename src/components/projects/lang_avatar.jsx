@@ -1,54 +1,67 @@
-import { Avatar } from "@mui/material";
 import PropTypes from "prop-types";
-import { RubyPlainIcon } from "react-devicons";
-import Bootstrap from "../../images/bootstrap.png";
-import CSS from "../../images/css-3.png";
-import HTML from "../../images/html-5.png";
-import JavaScript from "../../images/js.png";
-import MUI from "../../images/mui.svg";
-import Rails from "../../images/rails.png";
-import React from "../../images/react.png";
-import Ruby from "../../images/ruby.png";
-import Stimulus from "../../images/stimulus.svg";
 
-const images = {
-  bootstrap: Bootstrap,
-  css: CSS,
-  html: HTML,
-  javascript: JavaScript,
-  rails: Rails,
-  react: React,
-  ruby: Ruby,
-  mui: MUI,
-  stimulus: Stimulus,
-};
+import {
+  BootstrapPlainIcon,
+  Css3PlainIcon,
+  FigmaPlainIcon,
+  GithubOriginalIcon,
+  GitPlainIcon,
+  HerokuPlainIcon,
+  Html5PlainIcon,
+  JavascriptPlainIcon,
+  MaterialuiPlainIcon,
+  PostgresqlPlainIcon,
+  RailsPlainIcon,
+  ReactOriginalIcon,
+  RubyPlainIcon,
+  SassOriginalIcon,
+} from "react-devicons";
 
-const IconName = {
-  ruby: "RubyPlainIcon",
+const iconNames = {
+  ruby: RubyPlainIcon,
+  rails: RailsPlainIcon,
+  javascript: JavascriptPlainIcon,
+  react: ReactOriginalIcon,
+  html: Html5PlainIcon,
+  css: Css3PlainIcon,
+  bootstrap: BootstrapPlainIcon,
+  mui: MaterialuiPlainIcon,
+  heroku: HerokuPlainIcon,
+  postgresql: PostgresqlPlainIcon,
+  sass: SassOriginalIcon,
+  git: GitPlainIcon,
+  github: GithubOriginalIcon,
+  figma: FigmaPlainIcon,
 };
 
 export function LangAvatar({ sx, imageKey, ...props }) {
   console.log(props);
+  const IconComponent = iconNames[imageKey];
   return (
-    <Avatar
-      sx={{
-        m: 2,
-        p: 1,
-        height: { xs: "32px", md: "40px" },
-        width: { xs: "32px", md: "40px" },
-        ...sx,
-      }}
-      src={images[imageKey]}
+    <IconComponent
+      color="white"
+      size="32px"
+      style={{ margin: "0 16px" }}
       {...props}
     />
-
-    // <{IconName[imageKey]} color="white" size="40px" />
   );
 }
 
+// <Avatar
+//   sx={{
+//     m: 2,
+//     p: 1,
+//     height: { xs: "32px", md: "40px" },
+//     width: { xs: "32px", md: "40px" },
+//     ...sx,
+//   }}
+//   src={images[imageKey]}
+//   {...props}
+// />
+
 // Experimenting with PropTypes
 
-// LangAvatar.propTypes = {
-//   sx: PropTypes.object,
-//   imageKey: PropTypes.oneOf(Object.keys(images)),
-// };
+LangAvatar.propTypes = {
+  sx: PropTypes.object,
+  imageKey: PropTypes.oneOf(Object.keys(iconNames)),
+};

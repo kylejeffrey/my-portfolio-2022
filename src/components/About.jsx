@@ -25,7 +25,11 @@ export const About = () => {
       >
         <Typography
           variant="body1"
-          sx={{ m: "16px 32px", fontFamily: "NeueHaasDisplayThin" }}
+          sx={{
+            m: "16px 32px",
+            fontFamily: "NeueHaasDisplayThin",
+            fontSize: "18px",
+          }}
         >
           {/* MY NAME IS KYLE JEFFREY. I WAS BORN AND RAISED IN PHOENIX, ARIZONA AND
           HAVE LIVED IN OSAKA, JAPAN SINCE 2013.  */}
@@ -34,7 +38,11 @@ export const About = () => {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ m: "16px 32px", fontFamily: "NeueHaasDisplayThin" }}
+          sx={{
+            m: "16px 32px",
+            fontFamily: "NeueHaasDisplayThin",
+            fontSize: "18px",
+          }}
         >
           {/* AS A FULL-STACK WEB DEVELOPER, I HAVE A DEEP INTEREST IN TAKING
           INNOVATIVE IDEAS AND MAKING THEM A REALITY THROUGH CODE. SINCE
@@ -47,7 +55,11 @@ export const About = () => {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ m: "16px 32px", fontFamily: "NeueHaasDisplayThin" }}
+          sx={{
+            m: "16px 32px",
+            fontFamily: "NeueHaasDisplayThin",
+            fontSize: "18px",
+          }}
         >
           {/* IN MY SPARE TIME, I LIKE TO WORK ON MUSIC PRODUCTION, MAKING SCI-FI
           INSPIRED DRUM AND BASS. SOME OF MY INSPIRATION STEMS FROM MOVIES SUCH

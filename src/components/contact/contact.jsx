@@ -75,16 +75,16 @@ export const Contact = () => {
       </Box>
       <Box>
         <Typography
-          sx={{ mb: 5, fontFamily: "NeueHaasDisplayThin" }}
+          sx={{ mb: 5, fontFamily: "NeueHaasDisplayThin", fontSize: "18px" }}
           align="center"
           variant="body1"
         >
-          I'm open to freelance opportunities. Do you have a request, question
-          or suggestion? Feel free to contact me.
+          Feel free to reach out if you want to get in touch! I'm always open to
+          freelance opportunities.
         </Typography>
       </Box>
       <Container>
-        <Paper sx={{ p: 2 }}>
+        <Paper sx={{ p: 2, maxWidth: "800px", m: "0 auto" }}>
           <form ref={formRef} onSubmit={sendEmail}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>

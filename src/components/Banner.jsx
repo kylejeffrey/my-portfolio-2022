@@ -3,7 +3,7 @@ import { GithubOriginalIcon, LinkedinPlainIcon } from "react-devicons";
 import { HashLink } from "react-router-hash-link";
 import GitHub from "../images/github-icon.png";
 import LinkedIn from "../images/linkedin-icon.png";
-import avatar from "../images/my-photo-cropped-02-transparent.png";
+import avatar from "../images/my-photo-cropped-05-transparent.png";
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
