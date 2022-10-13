@@ -9,7 +9,7 @@ export const projects = [
     link: "https://www.ii-vent.live/",
     description:
       "A desktop web-application that streamlines the management of music events.",
-    languages: ["ruby", "rails", "javascript", "stimulus", "bootstrap"],
+    languages: ["ruby", "rails", "javascript", "bootstrap", "heroku"],
   },
   {
     name: "Books BnB",

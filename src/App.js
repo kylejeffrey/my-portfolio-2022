@@ -18,23 +18,35 @@ import { Skills } from "./components/Skills";
 
 const theme = createTheme({
   palette: {
+    primary: {
+      main: "#CBF83E",
+      // active: "purple",
+      // main: "#FFF",
+    },
     background: {
       default: "black",
     },
     mode: "dark",
-    primary: {
-      main: "#CBF83E",
-    },
     // secondary: green,
     //   kylesColors: {
     //     red: "#ff0",
     //   },
   },
-  overrides: {
+  components: {
     MuiPaper: {
-      root: {
-        // backgroundColor: "#121212",
-        backgroundColor: "black",
+      styleOverrides: {
+        root: {
+          backgroundColor: "black",
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          "&:hover": {
+            backgroundColor: "#4545E6",
+          },
+        }),
       },
     },
   },
