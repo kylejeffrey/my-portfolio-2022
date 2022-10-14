@@ -35,10 +35,11 @@ const iconNames = {
 };
 
 export function LangAvatar({ sx, imageKey, ...props }) {
-  console.log(props);
+  // console.log(props);
   const IconComponent = iconNames[imageKey];
   return (
     <IconComponent
+      key={imageKey}
       color="white"
       size="32px"
       style={{ margin: "0 16px" }}
