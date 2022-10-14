@@ -1,3 +1,4 @@
+import { Block } from "@mui/icons-material";
 import { Box, Button, Link, Typography } from "@mui/material";
 import { GithubOriginalIcon, LinkedinPlainIcon } from "react-devicons";
 import { HashLink } from "react-router-hash-link";
@@ -128,7 +129,30 @@ export const Banner = () => {
             scroll={(el) => scrollWithOffset(el)}
             style={{ textDecoration: "none" }}
           >
-            <Button variant="contained" size="large">
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                position: "relative",
+                transition: ".2s box-shadow",
+                "&:hover": {
+                  backgroundColor: "#CBF83E",
+                  boxShadow: "0px 0px 15px #CBF83E",
+                  // "&:before": {
+                  //   boxShadow: "0 0 5px 10px rgba(203, 248, 62, 0.2)",
+                  //   filter: "blur(20px)",
+                  // "&::before": {
+                  //   display: "block",
+                  //   content: "",
+                  //   position: "absolute",
+                  //   backgroundColor: "#CBF83E",
+                  //   boxShadow: "1px 1px 10px #CBF83E",
+                  //   zIndex: "-1",
+                  // },
+                  // },
+                },
+              }}
+            >
               Contact Me
             </Button>
           </HashLink>
@@ -149,6 +173,7 @@ export const Banner = () => {
             objectFit: "cover",
             borderRadius: "50%",
             backgroundColor: "white",
+            // boxShadow: "0px 0px 30px white",
           }}
         ></Box>
       </Box>

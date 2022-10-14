@@ -26,67 +26,67 @@ export const Skills = () => {
       </Typography>
       <Container maxWidth="sm" className="skills-body-wrapper">
         <Grid container my={4} rowSpacing={2} columnSpacing={12}>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <Html5PlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <Css3PlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <JavascriptPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <ReactOriginalIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <RubyPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <RailsPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <PostgresqlPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <BootstrapPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <GitPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          {/* <Grid item xs={6} md={3}>
+          {/* <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <GithubOriginalIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid> */}
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <HerokuPlainIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <SassOriginalIcon color="#CBF83E" size="40px" />
             </Box>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">
               <FigmaPlainIcon color="#CBF83E" size="40px" />
             </Box>

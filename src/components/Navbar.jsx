@@ -14,7 +14,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import { useState } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const navigationLinks = [
   { name: "ABOUT", href: "#about" },
@@ -41,7 +41,7 @@ export const Navbar = () => {
         }}
       >
         <Box>
-          <Link
+          <HashLink
             to="#banner"
             scroll={(el) => scrollWithOffset(el)}
             style={{ textDecoration: "none" }}
@@ -64,19 +64,37 @@ export const Navbar = () => {
                 color: "white",
                 border: "2px solid rgb(200, 200, 200)",
                 ml: 1,
+                "&:hover": {
+                  backgroundColor: "#CBF83E",
+                  boxShadow: "0px 0px 15px #CBF83E",
+                  color: "black",
+                  border: "none",
+                },
               }}
             >
               KJ
             </Avatar>
-          </Link>
+          </HashLink>
         </Box>
         <Hidden mdDown>
           <Box
             sx={{ display: "flex", flexGrow: 1, justifyContent: "flex-end" }}
           >
             {navigationLinks.map((item) => (
-              <Box key={item.href} sx={{ px: 2 }}>
-                <Link
+              <Box
+                key={item.href}
+                sx={{
+                  width: "100px",
+                  textAlign: "center",
+                  // px: 2,
+                  "&:hover": {
+                    borderBottom: "1px solid #CBF83E",
+                    // backgroundColor: "#CBF83E",
+                    // boxShadow: "0 4px 8px -4px #CBF83E",
+                  },
+                }}
+              >
+                <HashLink
                   to={item.href}
                   scroll={(el) => scrollWithOffset(el)}
                   // smooth
@@ -91,7 +109,7 @@ export const Navbar = () => {
                   // sx={{ color: "white" }}
                 >
                   {item.name}
-                </Link>
+                </HashLink>
               </Box>
             ))}
           </Box>
@@ -123,7 +141,7 @@ export const Navbar = () => {
         <List>
           {navigationLinks.map((item) => (
             <ListItem key={item.href}>
-              <Link
+              <HashLink
                 to={item.href}
                 scroll={(el) => scrollWithOffset(el)}
                 style={{
@@ -138,7 +156,7 @@ export const Navbar = () => {
                 // sx={{ color: "white" }}
               >
                 {item.name}
-              </Link>
+              </HashLink>
             </ListItem>
           ))}
         </List>

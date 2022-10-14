@@ -9,7 +9,18 @@ export function Project({ name, image, link, description, languages }) {
       <Paper sx={{ p: 3, mb: 5, borderRadius: "15px" }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
           {/* <LeftImageBlock name={name} image={image} /> */}
-          <Grid item xs={12} lg={5.5} sx={{ pb: { xs: 3, lg: 0 } }}>
+          <Grid
+            item
+            xs={12}
+            lg={5.5}
+            sx={{
+              pb: { xs: 3, lg: 0 },
+              "&:hover": {
+                // backgroundColor: "#CBF83E",
+                boxShadow: "0px 0px 15px #CBF83E",
+              },
+            }}
+          >
             <Link href={link} target="_blank" rel="noopener noreferrer">
               <div>
                 {/* <span> */}
@@ -81,6 +92,10 @@ export function Project({ name, image, link, description, languages }) {
                     sx={{
                       py: 1,
                       px: 6,
+                      "&:hover": {
+                        backgroundColor: "#CBF83E",
+                        boxShadow: "0px 0px 15px #CBF83E",
+                      },
                     }}
                   >
                     View Project
