@@ -40,15 +40,15 @@ const theme = createTheme({
         },
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        root: ({ ownerState }) => ({
-          "&:hover": {
-            backgroundColor: "#4545E6",
-          },
-        }),
-      },
-    },
+    // MuiButton: {
+    //   styleOverrides: {
+    //     root: ({ ownerState }) => ({
+    //       "&:hover": {
+    //         filter: "blur(20px)",
+    //       },
+    //     }),
+    //   },
+    // },
   },
 });
 

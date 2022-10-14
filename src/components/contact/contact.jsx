@@ -140,6 +140,12 @@ export const Contact = () => {
                   variant="contained"
                   fullWidth
                   value="Send"
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#CBF83E",
+                      boxShadow: "0px 0px 15px #CBF83E",
+                    },
+                  }}
                 >
                   Submit
                 </Button>
