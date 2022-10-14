@@ -76,7 +76,7 @@ export function Project({ name, image, link, description, languages }) {
                 }}
               >
                 {languages.map((language) => (
-                  <LangAvatar imageKey={language} />
+                  <LangAvatar imageKey={language} key={language} />
                 ))}
               </Box>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
