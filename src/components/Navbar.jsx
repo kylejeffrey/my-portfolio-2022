@@ -64,6 +64,8 @@ export const Navbar = () => {
                 color: "white",
                 border: "2px solid rgb(200, 200, 200)",
                 ml: 1,
+                // transition: "border 0s, backgroundColor 1.2s, color 0.2s",
+                // transition: "all 0.5s",
                 "&:hover": {
                   backgroundColor: "#CBF83E",
                   boxShadow: "0px 0px 15px #CBF83E",

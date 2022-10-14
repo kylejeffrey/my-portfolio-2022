@@ -15,9 +15,11 @@ export function Project({ name, image, link, description, languages }) {
             lg={5.5}
             sx={{
               pb: { xs: 3, lg: 0 },
+              transition: "all 0.25s",
+
               "&:hover": {
                 // backgroundColor: "#CBF83E",
-                boxShadow: "0px 0px 15px #CBF83E",
+                boxShadow: "0px 0px 20px #CBF83E",
               },
             }}
           >

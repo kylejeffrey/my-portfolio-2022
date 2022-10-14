@@ -1,5 +1,4 @@
 import { CssBaseline } from "@mui/material";
-import { green } from "@mui/material/colors";
 import {
   createTheme,
   StyledEngineProvider,
