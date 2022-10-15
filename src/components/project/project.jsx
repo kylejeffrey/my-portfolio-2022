@@ -19,7 +19,8 @@ export function Project({ name, image, link, description, languages }) {
 
               "&:hover": {
                 // backgroundColor: "#CBF83E",
-                boxShadow: "0px 0px 20px #CBF83E",
+                // boxShadow: "0px 0px 10px #CBF83E",
+                opacity: 0.7,
               },
             }}
           >
