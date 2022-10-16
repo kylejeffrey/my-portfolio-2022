@@ -11,7 +11,7 @@ console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
 window.__CONFIG__ = {
   REACT_APP_EMAILJS_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
   REACT_APP_EMAILJS_TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-  REACT_APP_EMAILJS_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+  REACT_APP_EMAILJS_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 };
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
