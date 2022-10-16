@@ -1,4 +1,4 @@
-import { Avatar, Box, Container, Grid, Link, Typography } from "@mui/material";
+import { Avatar, Box, Container, Link, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 
 const scrollWithOffset = (el) => {

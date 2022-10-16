@@ -3,7 +3,7 @@ import {
   BootstrapPlainIcon,
   Css3PlainIcon,
   FigmaPlainIcon,
-  GithubOriginalIcon,
+  // GithubOriginalIcon,
   GitPlainIcon,
   HerokuPlainIcon,
   Html5PlainIcon,
