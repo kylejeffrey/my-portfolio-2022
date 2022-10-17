@@ -1,5 +1,7 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
+
+import { Box, Container, Grid, Typography } from "@mui/material";
+
 import { Project } from "../../components/project";
 import { fetchProjects } from "./data";
 
@@ -26,7 +28,7 @@ export function Projects() {
         Projects
       </Typography>
       <Box>
-        <Grid container justifyContent={"center"}>
+        <Grid container justifyContent="center">
           {projects.map((project) => (
             <Project key={project.name} {...project} />
           ))}

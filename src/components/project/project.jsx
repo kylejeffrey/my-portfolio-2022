@@ -1,6 +1,8 @@
+import React from "react";
+
 import { Box, Button, Grid, Link, Paper, Typography } from "@mui/material";
 import PropTypes from "prop-types";
-import React from "react";
+
 import { LangAvatar } from "../projects/lang_avatar";
 
 export function Project({ name, image, link, description, languages }) {

@@ -1,6 +1,10 @@
+import React from "react";
+
 import { Box, Typography } from "@mui/material";
 
 export const About = () => {
+  React.useEffect(() => {});
+
   return (
     <Box
       id="about"
