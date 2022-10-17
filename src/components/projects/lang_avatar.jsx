@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React from "react";
 import {
   BootstrapPlainIcon,
   Css3PlainIcon,

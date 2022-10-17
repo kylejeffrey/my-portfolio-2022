@@ -1,6 +1,9 @@
+import React from "react";
+
 import { Box, Button, Link, Typography } from "@mui/material";
 import { GithubOriginalIcon, LinkedinPlainIcon } from "react-devicons";
 import { HashLink } from "react-router-hash-link";
+
 import avatar from "../images/my-photo-cropped-05-transparent.png";
 
 const scrollWithOffset = (el) => {
@@ -74,8 +77,8 @@ export const Banner = () => {
           </Typography>
         </Box>
         <Box
-          display={"flex"}
-          alignItems={"center"}
+          display="flex"
+          alignItems="center"
           justifyContent={{ xs: "center", md: "start" }}
         >
           <Link
