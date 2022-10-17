@@ -77,7 +77,7 @@ export function Project({ name, image, link, description, languages }) {
                 sx={{
                   display: "flex",
                   justifyContent: "start",
-                  "flex-wrap": "wrap",
+                  flexWrap: "wrap",
                   mt: 5,
                   mb: 5,
                 }}
