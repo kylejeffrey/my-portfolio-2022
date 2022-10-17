@@ -43,7 +43,7 @@ export function LangAvatar({ sx, imageKey, ...props }) {
       key={imageKey}
       color="white"
       size="32px"
-      style={{ margin: "0 16px" }}
+      style={{ margin: "8px" }}
       {...props}
     />
   );

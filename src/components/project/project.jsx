@@ -34,7 +34,8 @@ export function Project({ name, image, link, description, languages }) {
                   alt={name}
                   style={{
                     maxWidth: "100%",
-                    maxHeight: { xs: "400px" },
+                    maxHeight: "400px",
+                    // maxHeight: "400px",
                     objectFit: "cover",
                     // height: "100%",
                     // width: "100%",
@@ -76,6 +77,7 @@ export function Project({ name, image, link, description, languages }) {
                 sx={{
                   display: "flex",
                   justifyContent: "start",
+                  "flex-wrap": "wrap",
                   mt: 5,
                   mb: 5,
                 }}
