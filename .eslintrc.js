@@ -15,8 +15,11 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
       modules: true,
+      experimentalObjectRestSpread: true,
     },
-    ecmaVersion: 6,
+    requireConfigFile: false,
+    ecmaVersion: 2018,
+    // ecmaVersion: 6,
     sourceType: "module",
   },
   plugins: ["react", "react-hooks", "import"],

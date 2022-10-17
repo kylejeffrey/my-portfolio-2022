@@ -1,11 +1,13 @@
+import React from "react";
+
 import { CssBaseline } from "@mui/material";
 import {
   createTheme,
   StyledEngineProvider,
   ThemeProvider,
 } from "@mui/material/styles";
-import React from "react";
 import { BrowserRouter } from "react-router-dom";
+
 import "./App.css";
 import { About } from "./components/About";
 import { Banner } from "./components/Banner";
