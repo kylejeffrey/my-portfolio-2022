@@ -1,6 +1,7 @@
 import React from "react";
 
 import ReactDOM from "react-dom/client";
+import HttpsRedirect from "react-https-redirect";
 
 import App from "./App";
 import "./fonts/Betatron-Regular.otf";
@@ -17,9 +18,11 @@ window.__CONFIG__ = {
 };
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <HttpsRedirect>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </HttpsRedirect>
 );
 
 // If you want to start measuring performance in your app, pass a function
