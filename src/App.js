@@ -6,6 +6,7 @@ import {
   StyledEngineProvider,
   ThemeProvider,
 } from "@mui/material/styles";
+import HttpsRedirect from "react-https-redirect";
 import { BrowserRouter } from "react-router-dom";
 
 import "./App.css";
@@ -55,20 +56,22 @@ const theme = createTheme({
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
+    <HttpsRedirect>
+      <BrowserRouter>
+        <StyledEngineProvider injectFirst>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
 
-          <Navbar />
-          <Banner />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </ThemeProvider>
-      </StyledEngineProvider>
-    </BrowserRouter>
+            <Navbar />
+            <Banner />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
+          </ThemeProvider>
+        </StyledEngineProvider>
+      </BrowserRouter>
+    </HttpsRedirect>
   );
 }
