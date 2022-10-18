@@ -18,11 +18,11 @@ window.__CONFIG__ = {
 };
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <HttpsRedirect>
-    <React.StrictMode>
+  <React.StrictMode>
+    <HttpsRedirect>
       <App />
-    </React.StrictMode>
-  </HttpsRedirect>
+    </HttpsRedirect>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
