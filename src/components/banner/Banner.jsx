@@ -4,7 +4,7 @@ import { Box, Button, Link, Typography } from "@mui/material";
 import { GithubOriginalIcon, LinkedinPlainIcon } from "react-devicons";
 import { HashLink } from "react-router-hash-link";
 
-import avatar from "../images/my-photo-cropped-05-transparent.png";
+import avatar from "../../images/my-photo-cropped-05-transparent.png";
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -70,8 +70,6 @@ export const Banner = () => {
               mb: 2,
             }}
           >
-            {/* A FULL-STACK WEB DEVELOPER WITH A PASSION FOR BRINGING CREATIVE
-            IDEAS TO LIFE. */}
             A full-stack web developer with a passion for bringing creative
             ideas to life.
           </Typography>
@@ -87,14 +85,6 @@ export const Banner = () => {
             rel="noopener noreferrer"
           >
             <LinkedinPlainIcon color="white" size="40px" />
-            {/* <img
-              src={LinkedIn}
-              style={{
-                height: "56px",
-                objectFit: "cover",
-                filter: "brightness(0) invert(0.8)",
-              }}
-            /> */}
           </Link>
           <Link
             href="https://github.com/kylejeffrey"
@@ -106,14 +96,6 @@ export const Banner = () => {
               size="40px"
               style={{ marginLeft: "16px" }}
             />
-            {/* <img
-              src={GitHub}
-              style={{
-                height: "72px",
-                objectFit: "cover",
-                filter: "brightness(0) invert(0.8)",
-              }}
-            /> */}
           </Link>
         </Box>
         <Box
@@ -138,18 +120,6 @@ export const Banner = () => {
                 "&:hover": {
                   backgroundColor: "#CBF83E",
                   boxShadow: "0px 0px 15px #CBF83E",
-                  // "&:before": {
-                  //   boxShadow: "0 0 5px 10px rgba(203, 248, 62, 0.2)",
-                  //   filter: "blur(20px)",
-                  // "&::before": {
-                  //   display: "block",
-                  //   content: "",
-                  //   position: "absolute",
-                  //   backgroundColor: "#CBF83E",
-                  //   boxShadow: "1px 1px 10px #CBF83E",
-                  //   zIndex: "-1",
-                  // },
-                  // },
                 },
               }}
             >
