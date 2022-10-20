@@ -9,9 +9,8 @@ export const About = () => {
     <Box
       id="about"
       sx={{
-        m: { xs: "0 auto 160px" },
+        m: { xs: "0 auto 240px" },
         maxWidth: { xs: "640px", md: "800px" },
-        mb: "160px",
       }}
     >
       <Typography
