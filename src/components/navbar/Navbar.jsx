@@ -9,7 +9,6 @@ import {
   Divider,
   Hidden,
   IconButton,
-  // Link,
   List,
   ListItem,
   SwipeableDrawer,
@@ -46,12 +45,6 @@ export const Navbar = () => {
             to="#banner"
             scroll={(el) => scrollWithOffset(el)}
             style={{ textDecoration: "none" }}
-            // variant="button"
-            // href={"#"}
-            // underline="none"
-            // sx={{
-            //   color: "white",
-            // }}
           >
             <Avatar
               sizes="sm"
@@ -60,13 +53,9 @@ export const Navbar = () => {
                 fontFamily: "Montserrat",
                 background: "black",
                 borderRadius: "5px",
-                // width: "32px",
-                // mr: "auto",
                 color: "white",
                 border: "2px solid rgb(200, 200, 200)",
                 ml: 1,
-                // transition: "border 0s, backgroundColor 1.2s, color 0.2s",
-                // transition: "all 0.5s",
                 "&:hover": {
                   backgroundColor: "#CBF83E",
                   boxShadow: "0px 0px 15px #CBF83E",
@@ -89,11 +78,29 @@ export const Navbar = () => {
                 sx={{
                   width: "100px",
                   textAlign: "center",
-                  // px: 2,
-                  "&:hover": {
-                    borderBottom: "1px solid #CBF83E",
-                    // backgroundColor: "#CBF83E",
-                    // boxShadow: "0 4px 8px -4px #CBF83E",
+                  // "&:hover": {
+                  //   borderBottom: "1px solid #CBF83E",
+                  // },
+
+                  // Alison's animation:
+                  position: "relative",
+
+                  "&:before": {
+                    content: "''",
+                    position: "absolute",
+                    width: "0",
+                    height: "1px",
+                    bottom: "-1px",
+                    left: "50%",
+                    backgroundColor: "#CBF83E",
+                    transition: "all 0.5s ease",
+                    transform: "translate(-50%,0%)",
+                    transformOrigin: "center",
+                    visibility: "hidden",
+                  },
+                  "&:hover:before": {
+                    visibility: "visible",
+                    width: "100%",
                   },
                 }}
               >
@@ -106,10 +113,6 @@ export const Navbar = () => {
                     color: "white",
                     fontFamily: "NeueHaasDisplayThin",
                   }}
-                  // variant="button"
-                  // href={item.href}
-                  // underline="none"
-                  // sx={{ color: "white" }}
                 >
                   {item.name}
                 </HashLink>
@@ -153,10 +156,6 @@ export const Navbar = () => {
                   fontFamily: "NeueHaasDisplayThin",
                 }}
                 onClick={() => setOpen(false)}
-                // variant="button"
-                // href={item.href}
-                // underline="none"
-                // sx={{ color: "white" }}
               >
                 {item.name}
               </HashLink>

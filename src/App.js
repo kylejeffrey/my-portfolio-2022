@@ -21,17 +21,11 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#CBF83E",
-      // active: "purple",
-      // main: "#FFF",
     },
     background: {
       default: "black",
     },
     mode: "dark",
-    // secondary: green,
-    //   kylesColors: {
-    //     red: "#ff0",
-    //   },
   },
   components: {
     MuiPaper: {
@@ -41,15 +35,6 @@ const theme = createTheme({
         },
       },
     },
-    // MuiButton: {
-    //   styleOverrides: {
-    //     root: ({ ownerState }) => ({
-    //       "&:hover": {
-    //         filter: "blur(20px)",
-    //       },
-    //     }),
-    //   },
-    // },
   },
 });
 
