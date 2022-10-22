@@ -78,11 +78,6 @@ export const Navbar = () => {
                 sx={{
                   width: "100px",
                   textAlign: "center",
-                  // "&:hover": {
-                  //   borderBottom: "1px solid #CBF83E",
-                  // },
-
-                  // Alison's animation:
                   position: "relative",
 
                   "&:before": {

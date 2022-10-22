@@ -12,11 +12,7 @@ const scrollWithOffset = (el) => {
 export const Footer = () => {
   return (
     <Box sx={{ borderTop: "1px solid white" }}>
-      <Container
-        sx={{ mx: 0, mr: 0 }}
-        maxWidth="100%"
-        // sx={{ display: "flex", justifyContent: "space-between" }}
-      >
+      <Container sx={{ mx: 0, mr: 0 }} maxWidth="100%">
         <Box
           sx={{
             display: "flex",
@@ -30,19 +26,12 @@ export const Footer = () => {
               display: "flex",
               justifyContent: "start",
               alignItems: "center",
-              // p: 5,
             }}
           >
             <HashLink
               to="#banner"
               scroll={(el) => scrollWithOffset(el)}
               style={{ textDecoration: "none" }}
-              // variant="button"
-              // href={"#"}
-              // underline="none"
-              // sx={{
-              //   color: "white",
-              // }}
             >
               <Avatar
                 sizes="sm"
@@ -51,8 +40,6 @@ export const Footer = () => {
                   fontFamily: "NeueHaasDisplayThin",
                   background: "black",
                   borderRadius: "5px",
-                  // width: "32px",
-                  // mr: "auto",
                   color: "white",
                   border: "2px solid rgb(200, 200, 200)",
                   mr: { xs: 1, md: 3 },
