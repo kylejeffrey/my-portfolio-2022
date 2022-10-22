@@ -36,7 +36,6 @@ const iconNames = {
 };
 
 export function LangAvatar({ sx, imageKey, ...props }) {
-  // console.log(props);
   const IconComponent = iconNames[imageKey];
   return (
     <IconComponent
@@ -48,18 +47,6 @@ export function LangAvatar({ sx, imageKey, ...props }) {
     />
   );
 }
-
-// <Avatar
-//   sx={{
-//     m: 2,
-//     p: 1,
-//     height: { xs: "32px", md: "40px" },
-//     width: { xs: "32px", md: "40px" },
-//     ...sx,
-//   }}
-//   src={images[imageKey]}
-//   {...props}
-// />
 
 // Experimenting with PropTypes
 
