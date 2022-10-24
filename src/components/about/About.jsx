@@ -1,9 +1,15 @@
 import React from "react";
 
 import { Box, Typography } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const About = () => {
-  React.useEffect(() => {});
+  // React.useEffect(() => {});
+
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <Box
@@ -24,6 +30,8 @@ export const About = () => {
           maxWidth: "800px",
           m: "32px auto",
         }}
+        data-aos="fade-up"
+        data-aos-duration="500"
       >
         <Typography
           variant="body1"
