@@ -1,13 +1,25 @@
 import React from "react";
 
 import { Box, Button, Grid, Link, Paper, Typography } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 
 import { LangAvatar } from "../projects/lang_avatar";
 
 export function Project({ name, image, link, description, languages }) {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <Grid item xs={12} sx={{ p: 0, maxWidth: { xs: "640px", lg: "100%" } }}>
+    <Grid
+      item
+      xs={12}
+      sx={{ p: 0, maxWidth: { xs: "640px", lg: "100%" } }}
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <Paper sx={{ p: 3, mb: 5, borderRadius: "15px" }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
           {/* <LeftImageBlock name={name} image={image} /> */}

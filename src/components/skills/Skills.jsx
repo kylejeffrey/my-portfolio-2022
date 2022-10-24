@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
+import Aos from "aos";
 import {
   BootstrapPlainIcon,
   Css3PlainIcon,
@@ -17,7 +18,13 @@ import {
   SassOriginalIcon,
 } from "react-devicons";
 
+import "aos/dist/aos.css";
+
 export const Skills = () => {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Box id="skills" sx={{ mb: "240px" }}>
       <Typography
@@ -26,7 +33,12 @@ export const Skills = () => {
       >
         MY SKILLS
       </Typography>
-      <Container maxWidth="sm" className="skills-body-wrapper">
+      <Container
+        maxWidth="sm"
+        className="skills-body-wrapper"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
         <Grid container my={4} rowSpacing={2} columnSpacing={12}>
           <Grid item xs={4} md={3}>
             <Box p={2} textAlign="center">

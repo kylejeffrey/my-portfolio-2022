@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { Project } from "../../components/project";
 import { fetchProjects } from "./data";
@@ -12,6 +14,10 @@ export function Projects() {
     fetchProjects().then((res) => {
       setProjects(res.body);
     });
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
