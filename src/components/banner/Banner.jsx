@@ -1,8 +1,11 @@
 import React from "react";
 
 import { Box, Button, keyframes, Link, Typography } from "@mui/material";
+import Aos from "aos";
 import { GithubOriginalIcon, LinkedinPlainIcon } from "react-devicons";
 import { HashLink } from "react-router-hash-link";
+
+import "aos/dist/aos.css";
 
 import avatar from "../../images/my-photo-cropped-05-transparent.png";
 
@@ -12,38 +15,45 @@ const scrollWithOffset = (el) => {
   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
 };
 
-const slideInLeft = keyframes`
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-`;
+// Animations using state and keyframes:
 
-const slideInRight = keyframes`0% {
-  -webkit-transform: translateX(1000px);
-          transform: translateX(1000px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-}`;
+// const slideInLeft = keyframes`
+//   0% {
+//     -webkit-transform: translateX(-1000px);
+//             transform: translateX(-1000px);
+//     opacity: 0;
+//   }
+//   100% {
+//     -webkit-transform: translateX(0);
+//             transform: translateX(0);
+//     opacity: 1;
+//   }
+// `;
+
+// const slideInRight = keyframes`0% {
+//   -webkit-transform: translateX(1000px);
+//           transform: translateX(1000px);
+//   opacity: 0;
+// }
+// 100% {
+//   -webkit-transform: translateX(0);
+//           transform: translateX(0);
+//   opacity: 1;
+// }`;
 
 export const Banner = () => {
-  const [slide, setSlide] = React.useState(false);
+  // const [slide, setSlide] = React.useState(false);
 
-  React.useEffect(() => {}, []);
-  setTimeout(() => {
-    // Animation
-    setSlide(true);
-  }, 500);
+  // React.useEffect(() => {}, []);
+  // setTimeout(() => {
+  //   // Animation
+  //   setSlide(true);
+  // }, 500);
+
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Box
       id="banner"
@@ -65,11 +75,14 @@ export const Banner = () => {
         sx={{
           maxWidth: "640px",
           mr: { xs: "0px", md: "40px" },
-          animation:
-            slide &&
-            `${slideInLeft} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
+          // animation:
+          //   slide &&
+          //   `${slideInLeft} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
         }}
-        slide={true}
+        // slide={true}
+        data-aos="slide-right"
+        data-aos-ease="ease-out-quad"
+        data-aos-duration="500"
       >
         <Box
           sx={{
@@ -170,11 +183,11 @@ export const Banner = () => {
       <Box
         sx={{
           m: "16px",
-          animation:
-            slide &&
-            `${slideInRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
+          // animation:
+          //   slide &&
+          //   `${slideInRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
         }}
-        slide={true}
+        // slide={true}
       >
         <Box
           component="img"
@@ -188,6 +201,9 @@ export const Banner = () => {
             backgroundColor: "white",
             // boxShadow: "0px 0px 30px white",
           }}
+          data-aos="slide-left"
+          data-aos-easing="ease-out-quad"
+          data-aos-duration="500"
         ></Box>
       </Box>
     </Box>
