@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 import { LangAvatar } from "../projects/lang_avatar";
 
-export function Project({ name, image, link, description, languages }) {
+export function Project({ name, image, link, repo, description, languages }) {
   React.useEffect(() => {
     Aos.init();
   }, []);
@@ -90,15 +90,22 @@ export function Project({ name, image, link, description, languages }) {
                   display: "flex",
                   justifyContent: "start",
                   flexWrap: "wrap",
-                  mt: 5,
-                  mb: 5,
+                  mt: 3,
+                  mb: 3,
                 }}
               >
                 {languages.map((language) => (
                   <LangAvatar imageKey={language} key={language} />
                 ))}
               </Box>
-              <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  flexDirection: { xs: "column", md: "row" },
+                  alignItems: { xs: "center" },
+                }}
+              >
                 <Link
                   href={link}
                   target="_blank"
@@ -109,8 +116,10 @@ export function Project({ name, image, link, description, languages }) {
                     variant="contained"
                     color="primary"
                     sx={{
+                      width: { xs: "240px", md: "180px" },
                       py: 1,
-                      px: 6,
+                      // px: { xs: 5, md: 6 },
+                      mb: { xs: 2, md: 0 },
                       "&:hover": {
                         backgroundColor: "#CBF83E",
                         boxShadow: "0px 0px 15px #CBF83E",
@@ -118,6 +127,28 @@ export function Project({ name, image, link, description, languages }) {
                     }}
                   >
                     View Project
+                  </Button>
+                </Link>
+                <Link
+                  href={repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ textDecoration: "none" }}
+                >
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    sx={{
+                      width: { xs: "240px", md: "180px" },
+                      py: 1,
+                      // px: { xs: 5, md: 6 },
+                      "&:hover": {
+                        backgroundColor: "#AB47BC",
+                        boxShadow: "0px 0px 15px #AB47BC",
+                      },
+                    }}
+                  >
+                    View Code
                   </Button>
                 </Link>
               </Box>
@@ -133,6 +164,7 @@ Project.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   languages: PropTypes.any.isRequired,
 };
