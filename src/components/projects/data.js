@@ -27,7 +27,7 @@ export const projects = [
     link: "https://watch-list-kmj.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/rails-watch-list",
     description:
-      "A web application for organising movies into themed watchlists for later viewing.",
+      "A web application to organise and bookmark movies into themed watchlists for any mood or genre.",
     languages: ["ruby", "rails", "javascript", "bootstrap"],
   },
 ];
