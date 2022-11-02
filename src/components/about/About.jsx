@@ -5,8 +5,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export const About = () => {
-  // React.useEffect(() => {});
-
   React.useEffect(() => {
     Aos.init();
   }, []);

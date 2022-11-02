@@ -141,11 +141,7 @@ export const Banner = () => {
       <Box
         sx={{
           m: "16px",
-          // animation:
-          //   slide &&
-          //   `${slideInRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
         }}
-        // slide={true}
       >
         <Box
           component="img"
