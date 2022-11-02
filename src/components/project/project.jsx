@@ -22,6 +22,7 @@ export function Project({ name, image, link, repo, description, languages }) {
     >
       <Paper sx={{ p: 3, mb: 5, borderRadius: "15px" }}>
         <Grid container sx={{ justifyContent: "space-between" }}>
+          {/* BREAK PROJECT INTO SMALLER COMPONENTS: */}
           {/* <LeftImageBlock name={name} image={image} /> */}
           <Grid
             item
@@ -32,28 +33,21 @@ export function Project({ name, image, link, repo, description, languages }) {
               transition: "all 0.25s",
 
               "&:hover": {
-                // backgroundColor: "#CBF83E",
-                // boxShadow: "0px 0px 10px #CBF83E",
                 opacity: 0.7,
               },
             }}
           >
             <Link href={link} target="_blank" rel="noopener noreferrer">
               <div>
-                {/* <span> */}
                 <img
                   src={image}
                   alt={name}
                   style={{
                     maxWidth: "100%",
                     maxHeight: "400px",
-                    // maxHeight: "400px",
                     objectFit: "cover",
-                    // height: "100%",
-                    // width: "100%",
                   }}
                 />
-                {/* </span> */}
               </div>
             </Link>
           </Grid>
@@ -118,7 +112,6 @@ export function Project({ name, image, link, repo, description, languages }) {
                     sx={{
                       width: { xs: "240px", md: "180px" },
                       py: 1,
-                      // px: { xs: 5, md: 6 },
                       mb: { xs: 2, md: 0 },
                       "&:hover": {
                         backgroundColor: "#CBF83E",
@@ -141,7 +134,6 @@ export function Project({ name, image, link, repo, description, languages }) {
                     sx={{
                       width: { xs: "240px", md: "180px" },
                       py: 1,
-                      // px: { xs: 5, md: 6 },
                       "&:hover": {
                         backgroundColor: "#AB47BC",
                         boxShadow: "0px 0px 15px #AB47BC",

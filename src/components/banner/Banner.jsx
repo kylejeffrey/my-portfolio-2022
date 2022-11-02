@@ -15,41 +15,7 @@ const scrollWithOffset = (el) => {
   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
 };
 
-// Animations using state and keyframes:
-
-// const slideInLeft = keyframes`
-//   0% {
-//     -webkit-transform: translateX(-1000px);
-//             transform: translateX(-1000px);
-//     opacity: 0;
-//   }
-//   100% {
-//     -webkit-transform: translateX(0);
-//             transform: translateX(0);
-//     opacity: 1;
-//   }
-// `;
-
-// const slideInRight = keyframes`0% {
-//   -webkit-transform: translateX(1000px);
-//           transform: translateX(1000px);
-//   opacity: 0;
-// }
-// 100% {
-//   -webkit-transform: translateX(0);
-//           transform: translateX(0);
-//   opacity: 1;
-// }`;
-
 export const Banner = () => {
-  // const [slide, setSlide] = React.useState(false);
-
-  // React.useEffect(() => {}, []);
-  // setTimeout(() => {
-  //   // Animation
-  //   setSlide(true);
-  // }, 500);
-
   React.useEffect(() => {
     Aos.init();
   }, []);
@@ -65,21 +31,13 @@ export const Banner = () => {
         justifyContent: "center",
         pb: "160px",
         textAlign: { xs: "center", md: "left" },
-        // animation:
-        //   slide &&
-        //   `${slideInLeft} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
       }}
-      // slide={true}
     >
       <Box
         sx={{
           maxWidth: "640px",
           mr: { xs: "0px", md: "40px" },
-          // animation:
-          //   slide &&
-          //   `${slideInLeft} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
         }}
-        // slide={true}
         data-aos="slide-right"
         data-aos-ease="ease-out-quad"
         data-aos-duration="500"
@@ -183,11 +141,7 @@ export const Banner = () => {
       <Box
         sx={{
           m: "16px",
-          // animation:
-          //   slide &&
-          //   `${slideInRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
         }}
-        // slide={true}
       >
         <Box
           component="img"
@@ -199,7 +153,6 @@ export const Banner = () => {
             objectFit: "cover",
             borderRadius: "50%",
             backgroundColor: "white",
-            // boxShadow: "0px 0px 30px white",
           }}
           data-aos="slide-left"
           data-aos-easing="ease-out-quad"
