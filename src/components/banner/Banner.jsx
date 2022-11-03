@@ -7,7 +7,7 @@ import { HashLink } from "react-router-hash-link";
 
 import "aos/dist/aos.css";
 
-import avatar from "../../images/my-photo-cropped-05-transparent.png";
+import avatar from "../../images/tinified/my-photo-cropped-05-transparent.png";
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;

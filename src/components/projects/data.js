@@ -1,6 +1,6 @@
-import BooksBnB from "../../images/BooksBnB.png";
-import iivent from "../../images/ii-vent.png";
-import Watchlist from "../../images/Watchlist.png";
+import BooksBnB from "../../images/tinified/BooksBnB.png";
+import iivent from "../../images/tinified/ii-vent.png";
+import Watchlist from "../../images/tinified/Watchlist.png";
 
 export const projects = [
   {
