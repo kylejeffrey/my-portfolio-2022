@@ -145,7 +145,11 @@ export const Banner = () => {
       >
         <Box
           component="img"
-          src={avatar}
+          src={
+            window.__CONFIG__.NODE_ENV == "production"
+              ? `https://cdn.kylejeffrey.me${avatar}`
+              : avatar
+          }
           alt="Kyle"
           sx={{
             height: { xs: "240px", md: "280px" },
