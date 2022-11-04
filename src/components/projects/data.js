@@ -5,12 +5,7 @@ import Watchlist from "../../images/tinified/Watchlist.png";
 export const projects = [
   {
     name: "iivent",
-    image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
-        ? `https://cdn.kylejeffrey.me${iivent}`
-        : iivent
-      },
+    image: iivent,
     link: "https://www.ii-vent.live/",
     repo: "https://github.com/kylejeffrey/ii-vent",
     description:
@@ -19,12 +14,7 @@ export const projects = [
   },
   {
     name: "Books BnB",
-    image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
-        ? `https://cdn.kylejeffrey.me${BooksBnB}`
-        : BooksBnB
-      },
+    image: BooksBnB,
     link: "https://books-bnb-project.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/Books-BnB",
     description:
@@ -33,12 +23,7 @@ export const projects = [
   },
   {
     name: "Watchlist",
-    image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
-        ? `https://cdn.kylejeffrey.me${Watchlist}`
-        : Watchlist
-      },
+    image: Watchlist,
     link: "https://watch-list-kmj.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/rails-watch-list",
     description:

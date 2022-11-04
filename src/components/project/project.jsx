@@ -40,7 +40,11 @@ export function Project({ name, image, link, repo, description, languages }) {
             <Link href={link} target="_blank" rel="noopener noreferrer">
               <div>
                 <img
-                  src={image}
+                  src={
+                    window.__CONFIG__.NODE_ENV == "production"
+                      ? `https://cdn.kylejeffrey.me${image}`
+                      : image
+                  }
                   alt={name}
                   style={{
                     maxWidth: "100%",
