@@ -6,11 +6,9 @@ export const projects = [
   {
     name: "iivent",
     image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
+      window.__CONFIG__.NODE_ENV == "production"
         ? `https://cdn.kylejeffrey.me${iivent}`
-        : iivent
-      },
+        : iivent,
     link: "https://www.ii-vent.live/",
     repo: "https://github.com/kylejeffrey/ii-vent",
     description:
@@ -20,11 +18,9 @@ export const projects = [
   {
     name: "Books BnB",
     image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
+      window.__CONFIG__.NODE_ENV == "production"
         ? `https://cdn.kylejeffrey.me${BooksBnB}`
-        : BooksBnB
-      },
+        : BooksBnB,
     link: "https://books-bnb-project.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/Books-BnB",
     description:
@@ -34,11 +30,9 @@ export const projects = [
   {
     name: "Watchlist",
     image:
-      {
-        window.__CONFIG__.NODE_ENV == "production"
+      window.__CONFIG__.NODE_ENV == "production"
         ? `https://cdn.kylejeffrey.me${Watchlist}`
-        : Watchlist
-      },
+        : Watchlist,
     link: "https://watch-list-kmj.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/rails-watch-list",
     description:
