@@ -19,8 +19,8 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(window.__CONFIG__);
-    console.log(formRef);
+    // console.log(window.__CONFIG__);
+    // console.log(formRef);
 
     emailjs
       .sendForm(
