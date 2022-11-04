@@ -10,7 +10,7 @@ import "./fonts/NeueHaasDisplayThin.ttf";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+// console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
 window.__CONFIG__ = {
   NODE_ENV: process.env.NODE_ENV,
   REACT_APP_EMAILJS_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
