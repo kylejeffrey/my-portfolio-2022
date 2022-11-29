@@ -32,6 +32,8 @@ export const DemoVideo = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          flexDirection: "column",
+          // flexDirection: { xs: "column", md: "row" },
         }}
         data-aos="fade-up"
         data-aos-duration="500"
@@ -40,13 +42,14 @@ export const DemoVideo = () => {
           <Typography
             variant="body1"
             sx={{
-              m: "16px 32px",
+              m: "24px 32px",
               fontFamily: "NeueHaasDisplayThin",
               fontSize: "18px",
+              textAlign: "center",
             }}
           >
-            Check out my project pitch of iiVent! A web application to help
-            music event planners stay organized!
+            Check out my project pitch of iiVent! <br />A web application to
+            help music event planners stay organized.
           </Typography>
         </Box>
         <div className="ratio ratio-16x9">
@@ -54,6 +57,7 @@ export const DemoVideo = () => {
             src="https://www.youtube.com/embed/yh8iZUNj8B8?start=2210"
             title="iiVent Project Pitch Video"
             allowFullScreen
+            style={{ maxWidth: "100%", height: "100%" }}
           ></iframe>
         </div>
       </Box>
