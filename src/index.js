@@ -17,6 +17,7 @@ window.__CONFIG__ = {
   REACT_APP_EMAILJS_TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
   REACT_APP_EMAILJS_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
 };
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HttpsRedirect>

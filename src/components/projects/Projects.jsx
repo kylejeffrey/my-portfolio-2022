@@ -16,6 +16,7 @@ export function Projects() {
     });
   }, []);
 
+  // AOS - Animate On Scroll Library
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);

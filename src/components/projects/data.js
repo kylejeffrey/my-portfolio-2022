@@ -4,7 +4,7 @@ import Watchlist from "../../images/tinified/Watchlist.png";
 
 export const projects = [
   {
-    name: "iivent",
+    name: "ii-vent",
     image: iivent,
     link: "https://www.ii-vent.live/",
     repo: "https://github.com/kylejeffrey/ii-vent",
