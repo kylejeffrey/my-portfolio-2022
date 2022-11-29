@@ -12,6 +12,7 @@ import "./App.css";
 import { About } from "./components/about/About";
 import { Banner } from "./components/banner/Banner";
 import { Contact } from "./components/contact/contact";
+import { DemoVideo } from "./components/demo_video/demo_video";
 import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/navbar/Navbar";
 import { Projects } from "./components/projects/Projects";
@@ -50,6 +51,7 @@ export default function App() {
 
           <Navbar />
           <Banner />
+          <DemoVideo />
           <About />
           <Skills />
           <Projects />
