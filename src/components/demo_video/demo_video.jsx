@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Typography } from "@mui/material";
+import { Box, Hidden, Typography } from "@mui/material";
 import Aos from "aos";
 import { Container } from "react-bootstrap";
 
@@ -33,7 +33,6 @@ export const DemoVideo = () => {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          // flexDirection: { xs: "column", md: "row" },
         }}
         data-aos="fade-up"
         data-aos-duration="500"
@@ -52,12 +51,29 @@ export const DemoVideo = () => {
             help music event planners stay organized.
           </Typography>
         </Box>
-        <div className="ratio ratio-16x9">
+        <div
+          // className="ratio ratio-16x9"
+          style={{
+            position: "relative",
+            overflow: "hideen",
+            paddingBottom: "56.25%" /* 16:9 */,
+            width: "100%",
+          }}
+        >
           <iframe
             src="https://www.youtube.com/embed/yh8iZUNj8B8?start=2210"
             title="iiVent Project Pitch Video"
             allowFullScreen
-            style={{ maxWidth: "100%", height: "100%" }}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              bottom: 0,
+              right: 0,
+              width: "100%",
+              height: "100%",
+            }}
+            frameBorder="0"
           ></iframe>
         </div>
       </Box>
