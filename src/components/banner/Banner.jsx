@@ -36,7 +36,7 @@ export const Banner = () => {
       <Box
         sx={{
           width: "100%",
-          maxWidth: "640px",
+          maxWidth: { xs: "100%", md: "640px" },
           mr: { xs: "0px", md: "40px" },
         }}
         data-aos="slide-right"
@@ -111,7 +111,6 @@ export const Banner = () => {
         </Box>
         <Box
           sx={{
-            // width: "400px",
             width: "100%",
             display: "flex",
             justifyContent: { xs: "center", md: "space-between" },
