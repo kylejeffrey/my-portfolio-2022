@@ -21,7 +21,7 @@ export function Project({
     Aos.init();
   }, []);
 
-  let hasVideo = { video };
+  // let hasVideo = { video };
 
   return (
     <Grid
@@ -159,8 +159,17 @@ export function Project({
                   </Button>
                 </Link>
               </Box>
-              {/* CONDITIONALLY RENDER 3RD BUTTON IF THERE IS A VIDEO FOR THAT PROJECT */}
-              {hasVideo ? <VideoButton video /> : null}
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  // flexDirection: { xs: "row", md: "row" },
+                  alignItems: { xs: "center" },
+                }}
+              >
+                {/* CONDITIONALLY RENDER 3RD BUTTON IF THERE IS A VIDEO FOR THAT PROJECT */}
+                {video ? <VideoButton {...video} /> : null}
+              </Box>
             </Box>
           </Grid>
         </Grid>

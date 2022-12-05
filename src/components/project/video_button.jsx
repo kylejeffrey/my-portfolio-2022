@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Button, Link } from "@mui/material";
-import { blue } from "@mui/material/colors";
 import PropTypes from "prop-types";
 
 export function VideoButton({ video }) {
@@ -14,10 +13,12 @@ export function VideoButton({ video }) {
     >
       <Button
         variant="contained"
-        color="primary"
+        // color="something"
         sx={{
-          width: { xs: "240px", md: "180px" },
+          width: { xs: "240px", md: "440px", lg: "392px" },
           py: 1,
+          mt: { xs: 2, md: 2 },
+          mx: { xs: 0, md: "auto" },
           "&:hover": {
             backgroundColor: "#AB47BC",
             boxShadow: "0px 0px 15px #AB47BC",
