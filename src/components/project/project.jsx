@@ -6,11 +6,22 @@ import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 
 import { LangAvatar } from "../projects/lang_avatar";
+import { VideoButton } from "./video_button";
 
-export function Project({ name, image, link, repo, description, languages }) {
+export function Project({
+  name,
+  image,
+  link,
+  repo,
+  video,
+  description,
+  languages,
+}) {
   React.useEffect(() => {
     Aos.init();
   }, []);
+
+  let hasVideo = { video };
 
   return (
     <Grid
@@ -148,6 +159,8 @@ export function Project({ name, image, link, repo, description, languages }) {
                   </Button>
                 </Link>
               </Box>
+              {/* CONDITIONALLY RENDER 3RD BUTTON IF THERE IS A VIDEO FOR THAT PROJECT */}
+              {hasVideo ? <VideoButton video /> : null}
             </Box>
           </Grid>
         </Grid>
@@ -161,6 +174,7 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
+  video: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   languages: PropTypes.any.isRequired,
 };
