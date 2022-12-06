@@ -18,7 +18,6 @@ export const projects = [
     image: BooksBnB,
     link: "https://books-bnb-project.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/Books-BnB",
-    vide: null,
     description:
       "A rails marketplace app that allows users to search, upload or borrow books from other users.",
     languages: ["ruby", "rails", "javascript", "bootstrap"],
@@ -28,7 +27,6 @@ export const projects = [
     image: Watchlist,
     link: "https://watch-list-kmj.herokuapp.com/",
     repo: "https://github.com/kylejeffrey/rails-watch-list",
-    vide: null,
     description:
       "A web application to organise and bookmark movies into themed watchlists for any mood or genre.",
     languages: ["ruby", "rails", "javascript", "bootstrap"],

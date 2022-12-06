@@ -26,6 +26,9 @@ const theme = createTheme({
     secondary: {
       main: "#AB47BC",
     },
+    wildcard: {
+      main: "#FFF",
+    },
     background: {
       default: "black",
     },

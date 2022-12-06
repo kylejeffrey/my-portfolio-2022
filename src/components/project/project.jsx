@@ -21,8 +21,6 @@ export function Project({
     Aos.init();
   }, []);
 
-  // let hasVideo = { video };
-
   return (
     <Grid
       item
@@ -168,7 +166,7 @@ export function Project({
                 }}
               >
                 {/* CONDITIONALLY RENDER 3RD BUTTON IF THERE IS A VIDEO FOR THAT PROJECT */}
-                {video ? <VideoButton {...video} /> : null}
+                {!!video && <VideoButton href={video} />}
               </Box>
             </Box>
           </Grid>
