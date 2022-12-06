@@ -8,6 +8,7 @@ export const projects = [
     image: iivent,
     link: "https://www.ii-vent.live/",
     repo: "https://github.com/kylejeffrey/ii-vent",
+    video: "https://www.youtube.com/embed/yh8iZUNj8B8?start=2210",
     description:
       "A desktop web-application that streamlines the management of music events.",
     languages: ["ruby", "rails", "javascript", "bootstrap", "heroku"],
